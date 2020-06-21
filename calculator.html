@@ -4,22 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="calculator.css">
     <script src="calculator.js"></script>
 </head>
 <body>
+    <header id="header">
+
+    </header>
+    
+    <div class="col-md-6 offset-md-3 col-12 justify-items-center">
     <div class="main-body">
         <div class="calc">
             <div class="output">
                 <input type="text" id="screen">
             </div>
-                <div class="button">
-                    <button onclick="clearDisplay()" class="btn1">C</button> 
+                    
+                <div class="raw" style="    margin-top: 37px;">
+
+                    <button onclick="clearDisplay()" class="btn">C</button> 
+                    <button onclick="buttonclick('/')" class="btn">/</button>
+                    <button onclick="buttonclick('*')" class="btn">*</button>
+                    <button onclick="backSpace()" class="btn"><--</button>
+                    
                 <div class="raw">
                         <button onclick="buttonclick(7)" class="btn">7</button> 
                         <button onclick="buttonclick(8)" class="btn">8</button>
                         <button onclick="buttonclick(9)" class="btn">9</button>
-                        <button onclick="buttonclick('/')" class="btn">/</button>
+                        <button onclick="buttonclick('-')" class="btn">-</button>
             
                 </div>
             
@@ -27,14 +39,14 @@
                 <button onclick="buttonclick(4)" class="btn">4</button>
                 <button onclick="buttonclick(5)" class="btn">5</button>
                 <button onclick="buttonclick(6)" class="btn">6</button>
-                <button onclick="buttonclick('*')" class="btn">x</button>
+                <button onclick="buttonclick('+')" class="btn">+</button>
 
-            </div>
+           </div>
             <div class="raw">
                 <button onclick="buttonclick(1)" class="btn">1</button>
                 <button onclick="buttonclick(2)" class="btn">2</button>
                 <button onclick="buttonclick(3)" class="btn">3</button>
-                <button onclick="buttonclick('-')" class="btn">-</button>
+                <button onclick="buttonclick('()')" class="btn">()</button>
             </div>
             <div class="raw">
                 <button onclick="buttonclick('.')" class="btn">.</button>
@@ -49,6 +61,7 @@
       </div>
 
     </div>
+
 
     
 </body>
