@@ -12,3 +12,10 @@ function equalbutton(){
     var result=eval(text)
     document.getElementById('screen').value=result
 }
+function backSpace(){
+
+    
+    document.getElementById('screen').value
+    document.getElementById("screen").value = value.substr(0, value.length - 1);
+    document.value = document.value.substring(0, document.value.length - 1);
+}
